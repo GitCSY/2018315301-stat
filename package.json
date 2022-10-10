@@ -1,19 +1,25 @@
 {
   "name": "2018315301-stat",
   "version": "0.1.0",
-  "description": "# 2018315301-stat",
+  "description": "\"# 2018315301-stat\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GitCSY/2018315301-stat.git"
+  },
+  "bin": {
+    "skkustat": "./main.js"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GitCSY/2018315301-stat/issues"
   },
-  "homepage": "https://github.com/GitCSY/2018315301-stat#readme"
+  "homepage": "https://github.com/GitCSY/2018315301-stat#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
 }
