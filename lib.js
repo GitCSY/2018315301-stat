@@ -4,6 +4,8 @@ function sum(numbers)
     for(let i = 0; i < numbers.length; i++){
         s += numbers[i]
     }
+    //동일한 기능을 수행하는 코드:
+    //numbers.forEach((n) => {s += n;});
     //return numbers.reduce((prev, curr) => prev + curr, 0);
     return s;
 }

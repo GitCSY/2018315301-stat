@@ -2,7 +2,7 @@
   "name": "2018315301-stat",
   "version": "0.1.0",
   "description": "\"# 2018315301-stat\"",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
