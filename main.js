@@ -27,13 +27,9 @@ let result;
 switch(command)
 {
     case "sum":
-        result = lib.sum(numbers);
-        break;
     case "avg":
-        result = lib.avg(numbers);
-        break;
     case "max":
-        result = lib.max(numbers);
+        result = lib[command](numbers);
         break;
     default:
         console.log("Wrong command!");

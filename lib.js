@@ -26,6 +26,19 @@ function max(numbers)
     //return numbers.reduce((max, curr) => (max > curr ? max : curr), numbers[0]);
     return m;
 }
+
+function med(numbers)
+{
+    if(numbers.length === 0) return NaN;
+    let center = parseInt(numbers.length / 2);
+
+    if(numbers.length % 2 === 1){
+        return numbers[center];
+    }
+    else{
+        return Math.ceil((numbers[center - 1] + numbers[center]) / 2);
+    }
+}
 /*
 exports.sum = sum;
 exports.avg = avg;
