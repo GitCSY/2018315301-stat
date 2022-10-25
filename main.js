@@ -27,10 +27,23 @@ let result;
 switch(command)
 {
     case "sum":
-    case "avg":
-    case "max":
-        result = lib[command](numbers);
+        result = lib.sum(numbers);
         break;
+    case "avg":
+        result = lib.avg(numbers);
+        break;
+    case "max":
+        result = lib.max(numbers);
+        break;
+    case "med":
+        result = lib.med(numbers);
+        break;
+    case "iqr":
+        result = lib.iqr(numbers);
+        break;
+    case "outlier":
+        result = lib.outlier(numbers);
+        return result;
     default:
         console.log("Wrong command!");
         process.exit(1); //exit(0) = ended with no errors,  exit(1) = error
